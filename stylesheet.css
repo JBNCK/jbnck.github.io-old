@@ -12,9 +12,12 @@ a {
     color: white;
 }
 footer {
-    background-color: #191b24;
+    background-color: #f6f6f6;
     padding: 25px;
     text-align: center;
+}
+footer a {
+    color: black;
 }
 
 /* id's */
@@ -30,7 +33,7 @@ footer {
     margin-top: 25px;
 }
 .main_stripe {
-    background-color: #f5f5f5;
+    background-color: #f6f6f6;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 25px;
@@ -169,7 +172,7 @@ footer {
 .menu_content_close_button {
     position: absolute;
     float: left;
-    bottom: 25vh;
+    bottom: 20vh;
     left: 50%;
     height: 20px;
     align-self: center;
@@ -225,7 +228,7 @@ footer {
 .banner_icon_arrow_down {
     position: absolute;
     float: left;
-    bottom: 12%;
+    bottom: 8%;
     left: 50%;
     height: 15px;
     align-self: center;
@@ -242,7 +245,7 @@ footer {
 }
 .banner_small_text {
     position: absolute;
-    top: 74px;
+    top: 78px;
     left: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -252,7 +255,7 @@ footer {
     vertical-align: middle;
 }
 .banner_small_text_header {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -342,7 +345,7 @@ footer {
         transform: translate(-50%);*/
     }
     .banner_text_header {
-        font-size: 42px;
+        font-size: 40px;
     }
     .banner_text_subheader {
         font-size: medium;
