@@ -242,7 +242,7 @@ footer {
 }
 .banner_small_text {
     position: absolute;
-    top: 68px;
+    top: 74px;
     left: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -252,7 +252,7 @@ footer {
     vertical-align: middle;
 }
 .banner_small_text_header {
-    font-size: 56px;
+    font-size: 42px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
