@@ -7,9 +7,19 @@
         <script src="../jquery.js"></script>
         <script src="../main.js"></script>
     </head>
-    <body>
+    <body onload="onload()">
         <header>
-            <div class="navbar">
+            <div id="menu" class="menu">
+                <div id="menu_content" class="menu_content">
+                    <a href="../de/">Startseite</a>
+                    <hr>
+                    <a href="projekte">Projekte</a>
+                    <hr>
+                    <a href="kontakt">Kontakt</a>
+                    <img alt="close_icon" src="../media/close_icon.png" class="menu_content_close_button" onclick="menu()">
+                </div>
+            </div>
+            <div class="navbar navbar_desktop">
                 <img class="navbar_logo" alt="logo" src="../media/jan_biernacik.png">
                 <div class="navbar_links_box">
                     <a href="../de/"><div class="navbar_links navbar_links_current">
@@ -24,9 +34,22 @@
                 </div>
                 <img onclick="window.location.href = 'https://www.github.com/JBNCK'" class="navbar_icon" alt="github_logo" src="../media/github_logo.png">
             </div>
+            <div class="navbar navbar_mobile">
+                <img class="navbar_logo" alt="logo" src="../media/jan_biernacik.png">
+                <img src="../media/menu_icon.png" alt="Menu icon" onclick="menu()" class="navbar_icon navbar_icon_mobile_menu">
+                <img onclick="window.location.href = 'https://www.github.com/JBNCK'" class="navbar_icon navbar_icon_mobile_github" alt="github_logo" src="../media/github_logo.png">
+            </div>
         </header>
         <main>
-            <img alt="banner" src="../media/banner_darkened.jpg" class="banner">
+            <div class="banner_box">
+                <img alt="banner" src="../media/banner_darkened.jpg" class="banner">
+                <div class="banner_text">
+                    <a class="banner_text_header">Jan Biernacik</a>
+                    <a class="banner_text_subheader">Self-tought frontent web developer, linux enthusiast, android modder</a>
+                    
+                </div>
+                <img alt="arrow down" src="../media/arrow_down_icon.png" class="banner_icon_arrow_down">
+            </div>
         </main>
         <footer>
 
