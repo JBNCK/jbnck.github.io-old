@@ -332,8 +332,8 @@ footer {
         top: 50%;
         left: 5%;
         right: 8%;
-        /*-ms-transform: translateX(-50%);
-        transform: translateX(-50%);*/
+        /*-ms-transform: translate(-50%);
+        transform: translate(-50%);*/
     }
     .banner_text_header {
         font-size: 42px;
