@@ -100,7 +100,7 @@ a {
 .menu_content_close_button {
     position: absolute;
     float: left;
-    bottom: 80px;
+    bottom: 15%;
     left: 50%;
     height: 20px;
     align-self: center;
@@ -152,7 +152,7 @@ a {
 .banner_icon_arrow_down {
     position: absolute;
     float: left;
-    bottom: 80px;
+    bottom: 15%;
     left: 50%;
     height: 15px;
     align-self: center;
