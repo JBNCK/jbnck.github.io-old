@@ -47,7 +47,7 @@ footer a {
     transition: all .1s;
     display: block;
     color: white;
-    min-width: 100px;
+    min-width: 120px;
     width: fit-content;
     margin-top: 15px;
     text-align: center;
@@ -97,7 +97,7 @@ footer a {
     position: fixed;
     padding: 15px;
     /*opacity: 90%;*/
-    transition: all .4s;
+    transition: all .15s;
     z-index: 1;
 }
 .navbar_mobile {
@@ -119,8 +119,8 @@ footer a {
 .navbar_links_current {
     background-color: white;
     border: white solid 10px;
-    max-width: 100px;
-    min-width: 100px;
+    max-width: 120px;
+    min-width: 120px;
     color: black;
 }
 .navbar_links_box {

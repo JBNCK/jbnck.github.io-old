@@ -16,6 +16,10 @@ a {
     width: fit-content;
     margin-top: 15px;
 }
+.main_stripe_button_grey {
+    background-color: #191b24;
+    border: #191b24 solid 10px;
+}
 
 @media only screen and (max-width: 800px) {
     main {
