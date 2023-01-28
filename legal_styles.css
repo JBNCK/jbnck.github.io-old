@@ -6,7 +6,16 @@ a {
     display: block;
 }
 
-
+.main_stripe_button {
+    background-color: darkslateblue;
+    border: darkslateblue solid 10px;
+    border-radius: 20px;
+    transition: all .1s;
+    display: block;
+    color: white;
+    width: fit-content;
+    margin-top: 15px;
+}
 
 @media only screen and (max-width: 800px) {
     main {
