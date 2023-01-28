@@ -327,6 +327,7 @@ footer a {
     opacity: 1;
     cursor: pointer;
 }
+
 /* media tags */
 
 @media screen and (max-width: 400px) {
