@@ -44,8 +44,10 @@ footer {
     transition: all .1s;
     display: block;
     color: white;
+    min-width: 100px;
     width: fit-content;
     margin-top: 15px;
+    text-align: center;
 }
 .main_stripe_button:hover {
     cursor: pointer;
@@ -62,6 +64,7 @@ footer {
 }
 .main_stripe_a_p {
     color: black;
+    display: block;
 }
 .main_box_hr {
     width: 120px;
