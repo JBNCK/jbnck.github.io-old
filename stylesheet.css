@@ -80,6 +80,9 @@ footer {
     font-weight: lighter;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.main_stripe .thin_header {
+    color: darkslateblue;
+}
 
 .navbar {
     /*background: transparent;*/
