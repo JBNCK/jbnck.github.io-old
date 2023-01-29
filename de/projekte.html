@@ -55,25 +55,55 @@
                 </div>
             </div>-->
             <br>
+            <div class="main_box">
+                <center><h1 class="thin_header">Hervorgehobene Projekte</h1>
+                    <a style="color: grey;" class="main_stripe_a_p">Drücken Sie auf eine Kachel, um zum jeweiligen Projekt zu scrollen.</a><br>
+                    <div class="image_grid">
+                        <div class="column">
+                            <img alt="CLINOTE" src="../media/clinote_demo.png" width="100%">
+                            <div onclick="document.getElementById('project_clinote').scrollIntoView({behavior: 'smooth'})" class="column_overlay">
+                                <div class="column_overlay_text"><a>CLINOTE</a></div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <img alt="Android" src="../media/android-wide.jpg" width="100%">
+                            <div onclick="document.getElementById('project_oneui').scrollIntoView({behavior: 'smooth'})" class="column_overlay">
+                                <div class="column_overlay_text"><a>OneUI Experience</a></div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <img alt="UGLYFETCH" src="../media/uglyfetch_demo.jpg" width="100%">
+                            <div  onclick="document.getElementById('project_uglyfetch').scrollIntoView({behavior: 'smooth'})" class="column_overlay">
+                                <div class="column_overlay_text"><a>Uglyfetch</a></div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <img alt="MORE" src="../media/vscode.jpg" width="100%">
+                            <div  onclick="document.getElementById('project_website').scrollIntoView({behavior: 'smooth'})" class="column_overlay">
+                                <div class="column_overlay_text"><a>Diese Website</a></div>
+                            </div>
+                        </div>
+                </center>
+                </div>
             <div class="main_stripe">
                 <h1 class="thin_header">Fehlt etwas?</h1>
-                <a class="main_stripe_a_p">Eine detaillierte Liste aller meiner Projekte (auch der unnötigen) befindet sich auf GitHub.</a>
+                <a id="project_website" class="main_stripe_a_p">Eine detaillierte Liste aller meiner Projekte (auch der unnötigen) befindet sich auf GitHub.</a>
                 <a href="https://github.com/JBNCK?tab=repositories" class="main_stripe_button">Meine GitHub-Repos</a>
             </div>
             <div class="main_box">
                 <h1 class="thin_header">Website</h1>
-                <a class="main_stripe_a_p">Der Quelltext dieser Website ist bei GitHub für jeden frei zugänglich.</a>
+                <a id="project_oneui" class="main_stripe_a_p">Der Quelltext dieser Website ist bei GitHub für jeden frei zugänglich.</a>
                 <a href="https://github.com/JBNCK/jbnck.github.io" class="main_stripe_button main_stripe_button_grey">GitHub-Repo</a>
             </div>
             <div class="main_box">
                 <h1 class="thin_header">One-UI-Experience</h1>
                 <a class="main_stripe_a_p">Ein sogenannter "Debloater" für Samsung Handy's. Er entfernt jede art von vorinstallierten Schmutz-Apps und kann sogar die System-Apps mit Presets ohne Root-Zugriff austauschen.</a>
-                <a style="color: red;" class="main_stripe_a_p">Wichtig: Funktioniert noch nicht unter Android 13!</a>
+                <a id="project_clinote" style="color: red;" class="main_stripe_a_p">Wichtig: Funktioniert noch nicht unter Android 13!</a>
                 <a href="https://github.com/JBNCK/One-UI-Experience" class="main_stripe_button main_stripe_button_grey">GitHub-Repo</a>
             </div>
             <div class="main_box">
                 <h1 class="thin_header">CLINOTE</h1>
-                <a class="main_stripe_a_p">Eine sehr einfache To-Do-Listen-App für die Linux-Kommandozeile. Perfekt für Benutzer eines standalone window managers, die einen großen Wert auf RAM-Nutzung und co. legen.</a>
+                <a id="project_uglyfetch" class="main_stripe_a_p">Eine sehr einfache To-Do-Listen-App für die Linux-Kommandozeile. Perfekt für Benutzer eines standalone window managers, die einen großen Wert auf RAM-Nutzung und co. legen.</a>
                 <a href="https://github.com/JBNCK/CLINOTE" class="main_stripe_button main_stripe_button_grey">GitHub-Repo</a>
             </div>
             <div class="main_box">
@@ -91,13 +121,12 @@
                 <h1 class="thin_header">Small Project Center</h1>
                 <a class="main_stripe_a_p">Eine Repository für kleinere aber eventuell nützliche Projekte, welche keine eigene GitHub-Repo haben.</a>
                 <a class="main_stripe_button main_stripe_button_greyed_out">Coming soon!</a>
-            </div>
-            <div class="main_stripe">
                 <h1 class="thin_header">Tutorial Center</h1>
                 <a class="main_stripe_a_p">Sammlung von nützlichen Tutorials für Android, Windows und Linux.</a>
                 <a href="tutorials" class="main_stripe_button">Zum Tutorial Center</a>
             </div>
             <br>
+
         </main>
         <br>
         <br>
