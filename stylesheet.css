@@ -330,6 +330,7 @@ footer a {
     transition: .2s all;
     background: darkslateblue;
     border-radius: 20px;
+    margin-top: 0px;
 }
 .column_overlay_text {
     font-size: large;
@@ -363,7 +364,7 @@ footer a {
 @media screen and (max-width: 500px) {
     .column img {
         width: 100%;
-        height: auto;
+        height: 250px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -374,13 +375,19 @@ footer a {
     .main_stripe {
         padding-left: 22px;
         padding-right: 22px;
+    }    
+}
+@media screen and (max-width: 420px) {
+    .column_overlay {
+        margin-top: 8px;
+        height: 250px;
     }
     .column {
         margin: 0;
         padding: 0;
     }
     .column img {
-        margin: 0;
+        margin-top: 8px;
         padding: 0;
     }
 }
@@ -414,22 +421,39 @@ footer a {
         padding-left: 8%;
         padding-right: 8%;
     }
+    .column_overlay {
+        width: 100%;
+    }
 }
-@media screen and (max-width: 1030px) {
+@media screen and (min-width: 421px) and (max-width: 1005px) {
+    .column img {
+        margin-top: 8px;
+    }
+    .column_overlay {
+        margin-top: 8px;
+        height: 240px;
+    }
+}
+@media screen and (max-width: 1020px) {
     .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
-    .column img {
-        margin-top: 8px;
+
+}
+@media screen and (min-width: 1060px) and (max-width: 1170px) {
+        .column_overlay {
+        height: 240px;
+        margin-top: 0;
     }
 }
-@media screen and (min-width: 401px) and (max-width: 1170px) {
+@media screen and (min-width: 421px) and (max-width: 1170px) {
     .column img {
         width: 350px;
         height: 240px;
     }
+
 }
 @media screen and (min-width: 668px) and (max-width: 1380px) {
     /*.column {
