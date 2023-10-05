@@ -9,8 +9,14 @@
         <script src="../jquery.js"></script>
         <script src="../main.js"></script>
     </head>
-    <body onload="onload()">
+    <body onload="onload(); closed_wall();">
         <header>
+            <div id="wall" class="wall">
+                <div class="wall_content" id="wall_content">
+                    <img src="../media/construction_sign.png">
+                    <h1>Under construction</h1>
+                </div>
+            </div>
             <div id="menu" class="menu">
                 <div id="menu_content" class="menu_content">
                     <a href="../de/">Startseite</a>
@@ -50,64 +56,22 @@
             <img alt="arrow down" id="start_id"  onclick="document.getElementById('start_id').scrollIntoView({behavior: 'smooth'})" src="../media/arrow_down_icon.png" class="banner_icon_arrow_down">
         </div>
         <main>
-            <!--<div class="banner_box">
-                <img alt="banner" src="../media/banner_darkened.jpg" class="banner">
-                <div class="banner_text">
-                    <a class="banner_text_header">Jan Biernacik</a>
-                    <a class="banner_text_subheader">Self-tought frontent web developer, linux enthusiast, android modder</a>
-                    
-                </div>
-                <img alt="arrow down" id="start_id"  onclick="document.getElementById('start_id').scrollIntoView({behavior: 'smooth'})" src="../media/arrow_down_icon.png" class="banner_icon_arrow_down">
-            </div>-->
             <br>
             <div class="main_stripe">
                 <h1 class="thin_header" id="about_id">Ein wenig über mich</h1>
-                <a class="main_stripe_a_p"><span style="font-size: x-large; font-weight: bold;">Moin!</span>Ich bin Jan, 16 Jahre alt und lebe in Hamburg. Ich komme aus Polen, daher beherrsche ich Deutsch, Polnisch und Englisch fließend. Ein bisschen Spanisch kann ich auch. In Sachen Programmierung habe ich bisher nur Python gelernt, da ich mich auf die Webentwicklung konzentriere. Mein Interesse an Technik besteht schon seit Langem, aber intensiv beschäftige ich mich erst seit etwa 2 Jahren hobbymäßig mit der Webentwicklung. Diese von mir erstellte Website hilft mir dabei, meine Fähigkeiten in diesem Bereich zu verbessern.</a>
-                <a href="kontakt" class="main_stripe_button"> Kontakt </a>
+                <a class="main_stripe_a_p"><span style="font-size: x-large; font-weight: bold;">Moin! </span>Ich bin Jan, 16 Jahre alt und lebe in Hamburg. Ich komme aus Polen, daher beherrsche ich Deutsch, Polnisch und Englisch fließend. Ein bisschen Spanisch kann ich auch. In Sachen Programmierung habe ich bisher nur Python gelernt, da ich mich auf die Webentwicklung konzentriere. Mein Interesse an Technik besteht schon seit Langem, aber intensiv beschäftige ich mich erst seit etwa 2 Jahren hobbymäßig mit der Webentwicklung. Diese von mir erstellte Website hilft mir dabei, meine Fähigkeiten in diesem Bereich zu verbessern.</a>
+                <br>
             </div>
             <div class="main_box">
-                <center><h1 class="thin_header">Projekte</h1>
-                <div class="image_grid">
-                    <div class="column">
-                        <img alt="CLINOTE" src="../media/clinote_demo.png" width="100%">
-                        <div onclick="window.location.href = 'https://www.github.com/JBNCK/CLINOTE'" class="column_overlay">
-                            <div class="column_overlay_text"><a>CLINOTE</a></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <img alt="Android" src="../media/android-wide.jpg" width="100%">
-                        <div onclick="window.location.href = 'https://github.com/JBNCK/One-UI-Experience'" class="column_overlay">
-                            <div class="column_overlay_text"><a>OneUI Experience (Discontinued)</a></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <img alt="UGLYFETCH" src="../media/uglyfetch_demo.jpg" width="100%">
-                        <div onclick="window.location.href = 'https://www.github.com/JBNCK/uglyfetch'" class="column_overlay">
-                            <div class="column_overlay_text"><a>Uglyfetch</a></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <img alt="MORE" src="../media/vscode.jpg" width="100%">
-                        <div onclick="window.location.href = 'https://www.github.com/JBNCK/jbnck.github.io'" class="column_overlay">
-                            <div class="column_overlay_text"><a>Diese Website</a></div>
-                        </div>
-                    </div>
-                    <br>
-                    <a href="projekte" class="main_stripe_button main_stripe_button_grey">Weitere Projekte</a>
-                    <br>
-                    <br>
-                    <br>
+                <h1 class="thin_header">Lebenslauf</h1>
+            </div>
+            <div class="main_box">
                     <img alt="instagram" onclick="window.location.href = 'https://instagram.com/janbnck'" src="../media/instragram_grey.png" class="main_box_social"><a style="color: grey; font-size: 34px;"> &bull;</a>
                     <img alt="github" onclick="window.location.href = 'https://github.com/JBNCK'" src="../media/github_grey.png" class="main_box_social"><a style="color: grey; font-size: 34px;"> &bull;</a>
                     <img alt="xda" onclick="window.location.href = 'https://forum.xda-developers.com/m/janboygamer23.10369939/'" src="../media/Xda_logo.svg.png" class="main_box_social">
-                    <br>
-                    <br>
-                    <br>
-                </div></center>
             </div>
         </main>
         <footer>
-
             <br>
             <a href="../privacy">Datenschutz</a>
             <a>&bull;</a>

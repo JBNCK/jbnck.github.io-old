@@ -5,8 +5,22 @@ function redirect_home() {
 function onload() {
     console.log("setting variables")
     menu_expanded = 0;
+    wall_expanded = 0;
     var element = document.getElementById("menu_content");
     element.style.opacity = "0";
+}
+
+function closed_wall() {
+    setTimeout( () =>{
+        var element = document.getElementById("wall")
+        element.setAttribute("style", "height: 100vh;")
+        var element = document.getElementById("wall_content")
+        element.setAttribute("style", "height: 100vh;")
+        element.setAttribute("style", "visibility: visible;")
+        setTimeout( () =>{
+            element.style.opacity = "1";
+        }, 500);
+    }, 500)
 }
 
 $(window).scroll(function () {

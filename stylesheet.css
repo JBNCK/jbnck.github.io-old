@@ -36,6 +36,7 @@ footer a {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 25px;
+    box-sizing: border-box;
 }
 .main_stripe {
     background-color: #f5f5f5;
@@ -44,6 +45,7 @@ footer a {
     padding-top: 25px;
     padding-bottom: 25px;
     margin: 0;
+    box-sizing: border-box;
 }
 .main_stripe_button {
     background-color: darkslateblue;
@@ -83,6 +85,7 @@ footer a {
 .main_stripe_a_p {
     color: black;
     display: block;
+    text-align: justify;
 }
 .main_stripe_a_nav {
     color: darkslateblue;
@@ -99,6 +102,11 @@ footer a {
 }
 .main_box_social:hover {
     cursor: pointer;
+}
+.main_box_a_p {
+    text-align: justify;
+    color: black;
+    display: block;
 }
 
 .thin_header {
@@ -172,6 +180,28 @@ footer a {
     background-color: rgb(88, 80, 141);
     border: rgb(88, 80, 141) solid 10px;
     color: white;
+}
+
+.wall {
+    position: fixed;
+    transition: all 1s;
+    width: 100%;
+    height: 0;
+    background-color: #191b24;
+    z-index: 2;
+}
+.wall_content {
+    color: white;
+    height: 0;
+    opacity: 0%;
+    visibility: hidden;
+    transition: all 1s;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+.wall_content img {
+    width: 200px;
 }
 
 .menu {
@@ -266,8 +296,7 @@ footer a {
     left: 50%;
     height: 15px;
     align-self: center;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);                                                              
 }
 .banner_icon_arrow_down:hover {
     cursor: pointer;
@@ -315,70 +344,8 @@ footer a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.image_grid {
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0;
-}
-.column {
-    -ms-flex: 49%;
-    flex: 49%;
-    max-width: 49%;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    position: relative;
-}
-.column_overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .2s all;
-    background: darkslateblue;
-    border-radius: 20px;
-    margin-top: 0px;
-}
-.column_overlay_text {
-    font-size: large;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.column img {
-    float: left;
-    top: 0;
-    height: 300px;
-    width: 400px;
-    margin-top: 0px;
-    object-fit: cover;
-    /*border: solid 1px black;*/
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.column:hover .column_overlay {
-    opacity: 1;
-    cursor: pointer;
-}
-
 /* media tags */
 
-@media screen and (max-width: 500px) {
-    .column img {
-        width: 100%;
-        height: 250px;
-    }
-}
 @media screen and (max-width: 400px) {
     .main_box {
         margin-left: 22px;
@@ -388,20 +355,6 @@ footer a {
         padding-left: 22px;
         padding-right: 22px;
     }    
-}
-@media screen and (max-width: 420px) {
-    .column_overlay {
-        margin-top: 8px;
-        height: 250px;
-    }
-    .column {
-        margin: 0;
-        padding: 0;
-    }
-    .column img {
-        margin-top: 8px;
-        padding: 0;
-    }
 }
 @media screen and (max-width: 700px) {
     .navbar_mobile {
@@ -433,46 +386,8 @@ footer a {
         padding-left: 8%;
         padding-right: 8%;
     }
-    .column_overlay {
-        width: 100%;
-    }
-}
-@media screen and (min-width: 421px) and (max-width: 1005px) {
-    .column img {
-        margin-top: 8px;
-    }
-    .column_overlay {
-        margin-top: 8px;
-        height: 240px;
-    }
-}
-@media screen and (max-width: 1020px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-
-}
-@media screen and (min-width: 1060px) and (max-width: 1170px) {
-        .column_overlay {
-        height: 240px;
-        margin-top: 0;
-    }
-}
-@media screen and (min-width: 421px) and (max-width: 1170px) {
-    .column img {
-        width: 350px;
-        height: 240px;
-    }
-
 }
 @media screen and (min-width: 668px) and (max-width: 1380px) {
-    /*.column {
-        -ms-flex: 49.5%;
-        flex: 49.5%;
-        max-width: 49.5%;
-    }*/
     .main_box {
         margin-left: 15%;
         margin-right: 15%;

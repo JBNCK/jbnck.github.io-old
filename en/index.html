@@ -1,23 +1,118 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Jan Biernacik - Home</title>
+        <title>Jan Biernacik - Homepage</title>
         <link rel="stylesheet" href="../stylesheet.css">
-        <meta name="viewport" content="width=device-width" ,="" initial-scale="1.0">
+        <link rel="icon" href="../media/favicon.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#191b24">
         <script src="../jquery.js"></script>
         <script src="../main.js"></script>
     </head>
-    <body>
+    <body onload="onload(); closed_wall();">
         <header>
-            <div class="navbar">
-
+            <div id="wall" class="wall">
+                <div class="wall_content" id="wall_content">
+                    <img src="../media/construction_sign.png">
+                    <h1>Under construction</h1>
+                </div>
             </div>
+            <div id="menu" class="menu">
+                <div id="menu_content" class="menu_content">
+                    <a href="../de/">Homepage</a>
+                    <hr>
+                    <a href="projects">Projects</a>
+                    <hr>
+                    <a href="contact">Contact</a>
+                    <img alt="close_icon" src="../media/close_icon.png" class="menu_content_close_button" onclick="menu()">
+                </div>
+            </div>
+            <!--<div class="navbar navbar_desktop">
+                <img onclick="window.location.href = '../de'" class="navbar_logo" alt="logo" src="../media/jan_biernacik.png">
+                <div class="navbar_links_box">
+                    <a href="../de/"><div class="navbar_links navbar_links_current">
+                        Homepage
+                    </div></a>
+                    <a href="projects"><div class="navbar_links">
+                        Projects
+                    </div></a>
+                    <a href="contact"><div class="navbar_links">
+                        Contact
+                    </div></a>
+                </div>
+                <img onclick="window.location.href = 'https://www.github.com/JBNCK'" class="navbar_icon" alt="github_logo" src="../media/github_logo.png">
+            </div>
+            <div class="navbar navbar_mobile">
+                <img onclick="window.location.href = '../de'" class="navbar_logo" alt="logo" src="../media/jan_biernacik.png">
+                <img src="../media/menu_icon.png" alt="Menu icon" onclick="menu()" class="navbar_icon navbar_icon_mobile_menu">
+                <img onclick="window.location.href = 'https://www.github.com/JBNCK'" class="navbar_icon navbar_icon_mobile_github" alt="github_logo" src="../media/github_logo.png">
+            </div>-->
         </header>
-        <main>
-
+        <div class="banner_box">
+            <div class="banner_text">
+                <a class="banner_text_header">Jan Biernacik</a>
+                <a class="banner_text_subheader">Self-taught hobbyist web developer</a>
+            </div>
+            <!--<img alt="arrow down" id="start_id"  onclick="document.getElementById('start_id').scrollIntoView({behavior: 'smooth'})" src="../media/arrow_down_icon.png" class="banner_icon_arrow_down">-->
+        </div>
+        <!--<main>
+            <br>
+            <div class="main_stripe">
+                <h1 class="thin_header" id="about_id">A little about me</h1>
+                <a class="main_stripe_a_p"><span style="font-size: x-large; font-weight: bold;">Hi!</span> I'm Jan, 16 years old, and live in Hamburg. I'm from Poland, so I'm fluent in German, Polish, and English. I also know a bit of Spanish. In terms of programming, I've only learned Python so far, as I focus on web development. My interest in technology has been around for a long time, but I've been actively engaged in web development as a hobby for about 2 years. This website, created by me, helps me improve my skills in this area.</a>
+                <a href="contact" class="main_stripe_button"> Contact </a>
+            </div>
+            <div class="main_box">
+                <center><h1 class="thin_header">Projects</h1>
+                <div class="image_grid">
+                    <div class="column">
+                        <img alt="CLINOTE" src="../media/clinote_demo.png" width="100%">
+                        <div onclick="window.location.href = 'https://www.github.com/JBNCK/CLINOTE'" class="column_overlay">
+                            <div class="column_overlay_text"><a>CLINOTE</a></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img alt="Android" src="../media/android-wide.jpg" width="100%">
+                        <div onclick="window.location.href = 'https://github.com/JBNCK/One-UI-Experience'" class="column_overlay">
+                            <div class="column_overlay_text"><a>OneUI Experience (Discontinued)</a></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img alt="UGLYFETCH" src="../media/uglyfetch_demo.jpg" width="100%">
+                        <div onclick="window.location.href = 'https://www.github.com/JBNCK/uglyfetch'" class="column_overlay">
+                            <div class="column_overlay_text"><a>Uglyfetch</a></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img alt="MORE" src="../media/vscode.jpg" width="100%">
+                        <div onclick="window.location.href = 'https://www.github.com/JBNCK/jbnck.github.io'" class="column_overlay">
+                            <div class="column_overlay_text"><a>This Website</a></div>
+                        </div>
+                    </div>
+                    <br>
+                    <a href="projects" class="main_stripe_button main_stripe_button_grey">More Projects</a>
+                    <br>
+                    <br>
+                    <br>
+                    <img alt="instagram" onclick="window.location.href = 'https://instagram.com/janbnck'" src="../media/instragram_grey.png" class="main_box_social"><a style="color: grey; font-size: 34px;"> &bull;</a>
+                    <img alt="github" onclick="window.location.href = 'https://github.com/JBNCK'" src="../media/github_grey.png" class="main_box_social"><a style="color: grey; font-size: 34px;"> &bull;</a>
+                    <img alt="xda" onclick="window.location.href = 'https://forum.xda-developers.com/m/janboygamer23.10369939/'" src="../media/Xda_logo.svg.png" class="main_box_social">
+                    <br>
+                    <br>
+                    <br>
+                </div></center>
+            </div>
         </main>
         <footer>
-
-        </footer>
+            <br>
+            <a href="../privacy">Privacy</a>
+            <a>&bull;</a>
+            <a href="https://www.unsplash.com/">Image Source</a>
+            <a>&bull;</a>
+            <a href="https://www.github.com/JBNCK/jbnck.github.io">Source Code</a>
+            <a>&bull;</a>
+            <a href="../legal">Legal and License</a>
+            <br><br>
+        </footer>-->
     </body>
 </html>

@@ -9,8 +9,14 @@
         <script src="../jquery.js"></script>
         <script src="../main.js"></script>
     </head>
-    <body onload="onload()">
+    <body onload="onload(); closed_wall();">
         <header>
+            <div id="wall" class="wall">
+                <div class="wall_content" id="wall_content">
+                    <img src="../media/construction_sign.png">
+                    <h1>Under construction</h1>
+                </div>
+            </div>
             <div id="menu" class="menu">
                 <div id="menu_content" class="menu_content">
                     <a href="../de/">Startseite</a>

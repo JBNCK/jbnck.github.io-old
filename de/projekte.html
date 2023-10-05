@@ -9,8 +9,14 @@
         <script src="../jquery.js"></script>
         <script src="../main.js"></script>
     </head>
-    <body onload="onload()">
+    <body onload="onload(); closed_wall();">
         <header>
+            <div id="wall" class="wall">
+                <div class="wall_content" id="wall_content">
+                    <img src="../media/construction_sign.png">
+                    <h1>Under construction</h1>
+                </div>
+            </div>
             <div id="menu" class="menu">
                 <div id="menu_content" class="menu_content">
                     <a href="../de/">Startseite</a>
@@ -55,36 +61,6 @@
                 </div>
             </div>-->
             <br>
-            <div class="main_box">
-                <center><h1 class="thin_header">Hervorgehobene Projekte</h1>
-                    <a style="color: grey;" class="main_stripe_a_p">Drücken Sie auf eine Kachel, um zum jeweiligen Projekt zu scrollen.</a><br>
-                    <div class="image_grid">
-                        <div class="column">
-                            <img alt="CLINOTE" src="../media/clinote_demo.png" width="100%">
-                            <div onclick="document.getElementById('project_clinote').scrollIntoView({behavior: 'smooth'})" class="column_overlay">
-                                <div class="column_overlay_text"><a>CLINOTE</a></div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <img alt="Android" src="../media/android-wide.jpg" width="100%">
-                            <div onclick="document.getElementById('project_oneui').scrollIntoView({behavior: 'smooth'})" class="column_overlay">
-                                <div class="column_overlay_text"><a>OneUI Experience (Discontinued)/a></div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <img alt="UGLYFETCH" src="../media/uglyfetch_demo.jpg" width="100%">
-                            <div  onclick="document.getElementById('project_uglyfetch').scrollIntoView({behavior: 'smooth'})" class="column_overlay">
-                                <div class="column_overlay_text"><a>Uglyfetch</a></div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <img alt="MORE" src="../media/vscode.jpg" width="100%">
-                            <div  onclick="document.getElementById('project_website').scrollIntoView({behavior: 'smooth'})" class="column_overlay">
-                                <div class="column_overlay_text"><a>Diese Website</a></div>
-                            </div>
-                        </div>
-                </center>
-                </div>
             <div class="main_stripe">
                 <h1 class="thin_header">Fehlt etwas?</h1>
                 <a id="project_website" class="main_stripe_a_p">Eine detaillierte Liste aller meiner Projekte (auch der unnötigen) befindet sich auf GitHub.</a>
